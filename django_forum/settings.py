@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'django_forum.urls'
@@ -77,10 +78,13 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'dt3ps1pb8303s',
+        'HOST': 'ec2-52-207-74-100.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'czdjbcdjrwmjzi',
+        'PASSWORD': '6e8d4a9dd87ee1d965fa6f9bae947933c09e337ec939cf6577f0483719cba89c',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
