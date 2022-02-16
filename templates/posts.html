@@ -3,7 +3,7 @@
 <div class="bordert">
     <section class="content">
       <div class="header">
-        <img src="/static/img/logo-twitterblue.svg" class="logo" />
+        <img src="{% static 'img/twitterblue.svg' %}" class="logo" />
         <a href="#">Home</a>
       </div>
       <img src="{% static 'img/user.png' %}" style=" width: 15%; margin-bottom: -22%; margin-left: 1%;" !important/>
@@ -39,7 +39,7 @@
               <img class="Image" src="{{post.image.url}}" />
               <div>
                 <a href="/like/{{post.id}}">
-                  <img src="/static/img/icon-heart-gray.svg" style="width: 30px"/></a>
+                  <img src="{% static 'img/icon-heart-gray.svg' %}" style="width: 30px"/></a>
                   {{post.likecount}}
               </div>
             </div>
