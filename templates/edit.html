@@ -12,7 +12,7 @@
         <input type="text" name="name" placeholder="Name" value="{{posts.name}}" required/><br />
         <input name="body" rows="5" value="{{posts.body}}" required></input>
         <br />
-        <input id="uploadfile" type="file" name="image" />
+        <input id="uploadfile" type="file" name="image" /><br />
         {% if posts.image.url %}
         <img class="Image" src="{{posts.image.url}}" />
         {% endif %}
